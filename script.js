@@ -1,10 +1,10 @@
-var noon = 12;
-var evening = 18; // 6PM
-var wakeupTime = 9; // 9AM
-var lunchTime = 12; // 12PM
-var partyTime = 17; // 5PM
-var napTime = lunchTime + 2; // 2PM
-var time = new Date().getHours();
+let noon = 12;
+let evening = 18; // 6PM
+let wakeupTime = 9; // 9AM
+let lunchTime = 12; // 12PM
+let partyTime = 17; // 5PM
+let napTime = lunchTime + 2; // 2PM
+let time = new Date().getHours();
 
 var updateClock = function() {
 var messageText;
