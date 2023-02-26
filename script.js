@@ -6,11 +6,11 @@ let partyTime = 17; // 5PM
 let napTime = lunchTime + 2; // 2PM
 let time = new Date().getHours();
 
-var updateClock = function() {
-var messageText;
-var image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg";
-var timeEventJS = document.getElementById("timeEvent");
-var lolcatImage = document.getElementById("lolcat");
+const updateClock = function() {
+let messageText;
+let image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg";
+const timeEventJS = document.getElementById("timeEvent");
+const lolcatImage = document.getElementById("lolcat");
 
 if (time == partyTime){
 	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
