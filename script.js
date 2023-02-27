@@ -39,10 +39,10 @@ timeEventJS.innerText = messageText;
 showCurrentTime();
 };
 
-var showCurrentTime = function()
+const showCurrentTime = function()
 {
     // display the string on the webpage
-    var clock = document.getElementById('clock');
+    const clock = document.getElementById('clock');
  
     var currentTime = new Date();
  
@@ -84,7 +84,7 @@ updateClock();
 var oneSecond = 1000; 
 setInterval (updateClock, oneSecond);
 
-var partyTimeButton = document.getElementById("partyTimeButton");
+const partyTimeButton = document.getElementById("partyTimeButton");
 var isPartyTime = false;
 var partyEvent = function() {
  
