@@ -44,12 +44,12 @@ const showCurrentTime = function()
     // display the string on the webpage
     const clock = document.getElementById('clock');
  
-    var currentTime = new Date();
+    const currentTime = new Date();
  
-    var hours = currentTime.getHours();
-    var minutes = currentTime.getMinutes();
-    var seconds = currentTime.getSeconds();
-    var meridian = "AM";
+    let hours = currentTime.getHours();
+    let minutes = currentTime.getMinutes();
+    let seconds = currentTime.getSeconds();
+    let meridian = "AM";
  
     // Set hours 
     if (hours >= noon) 
@@ -74,7 +74,7 @@ const showCurrentTime = function()
     }
  
     // put together the string that displays the time
-    var clockTime = hours + ":" + minutes + ":" + seconds + " " + meridian + "!";
+    const clockTime = hours + ":" + minutes + ":" + seconds + " " + meridian + "!";
  
     clock.innerText = clockTime;
 };
