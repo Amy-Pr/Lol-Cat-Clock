@@ -81,12 +81,12 @@ const showCurrentTime = function()
 
 
 updateClock(); 
-var oneSecond = 1000; 
+let oneSecond = 1000; 
 setInterval (updateClock, oneSecond);
 
 const partyTimeButton = document.getElementById("partyTimeButton");
-var isPartyTime = false;
-var partyEvent = function() {
+let isPartyTime = false;
+const partyEvent = function() {
  
    if (isPartyTime === false) {
       isPartyTime = true;
