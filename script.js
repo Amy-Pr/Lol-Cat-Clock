@@ -102,10 +102,10 @@ const partyEvent = function() {
 };
 partyTimeButton.addEventListener('click', partyEvent);
 
-var wakeUpTimeSelector =  document.getElementById("wakeUpTimeSelector");
-var lunchTimeSelector =  document.getElementById("lunchTimeSelector");
-var napTimeSelector =  document.getElementById("napTimeSelector");
-var wakeUpEvent = function()
+const wakeUpTimeSelector =  document.getElementById("wakeUpTimeSelector");
+const lunchTimeSelector =  document.getElementById("lunchTimeSelector");
+const napTimeSelector =  document.getElementById("napTimeSelector");
+const wakeUpEvent = function()
 {
     wakeupTime = wakeUpTimeSelector.value;
 };
