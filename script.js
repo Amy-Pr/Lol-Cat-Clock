@@ -84,7 +84,7 @@ updateClock();
 let oneSecond = 1000; 
 setInterval (updateClock, oneSecond);
 
-const partyTimeButton = document.getElementById("partyTimeButton");
+const partyTimeButton = document.querySelector("#partyTimeButton");
 let isPartyTime = false;
 const partyEvent = function() {
  
@@ -102,18 +102,18 @@ const partyEvent = function() {
 };
 partyTimeButton.addEventListener('click', partyEvent);
 
-const wakeUpTimeSelector =  document.getElementById("wakeUpTimeSelector");
-const lunchTimeSelector =  document.getElementById("lunchTimeSelector");
-const napTimeSelector =  document.getElementById("napTimeSelector");
+const wakeUpTimeSelector =  document.querySelector("#wakeUpTimeSelector");
+const lunchTimeSelector =  document.querySelector("#lunchTimeSelector");
+const napTimeSelector =  document.querySelector("#napTimeSelector");
 const wakeUpEvent = function()
 {
     wakeupTime = wakeUpTimeSelector.value;
 };
-var lunchEvent = function()
+const lunchEvent = function()
 {
     lunchTime = lunchTimeSelector.value;
 };
-var napEvent = function()
+const napEvent = function()
 {
     napTime = napTimeSelector.value;
 };
