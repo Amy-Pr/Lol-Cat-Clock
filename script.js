@@ -9,8 +9,8 @@ let time = new Date().getHours();
 const updateClock = function() {
 let messageText;
 let image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat5.jpg";
-const timeEventJS = document.getElementById("timeEvent");
-const lolcatImage = document.getElementById("lolcat");
+const timeEventJS = document.querySelector("#timeEvent");
+const lolcatImage = document.querySelector("#lolcat");
 
 if (time == partyTime){
 	image = "https://s3.amazonaws.com/media.skillcrush.com/skillcrush/wp-content/uploads/2016/09/cat4.jpg";
@@ -42,7 +42,7 @@ showCurrentTime();
 const showCurrentTime = function()
 {
     // display the string on the webpage
-    const clock = document.getElementById('clock');
+    const clock = document.querySelector('#clock');
  
     const currentTime = new Date();
  
