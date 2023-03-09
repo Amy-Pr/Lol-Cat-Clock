@@ -27,7 +27,7 @@ if (time == partyTime){
 } else if (time < noon) {
 	image = "https://newbloggycat.files.wordpress.com/2020/04/cute-cat-with-messy-hair.jpg";
     messageText = "Good morning!";
-} else if (time > evening) {
+} else if (time >= evening) {
 	image = "https://www.petmd.com/sites/default/files/shutterstock_234894799.jpg";
     messageText = "Good Evening!";
 } else {
@@ -35,7 +35,7 @@ if (time == partyTime){
 }
 
 lolcatImage.src = image;
-timeEventJS.innerText = messageText;
+timeEventJS.textContent = messageText;
 showCurrentTime();
 };
 
@@ -76,7 +76,7 @@ const showCurrentTime = function()
     // put together the string that displays the time
     const clockTime = hours + ":" + minutes + ":" + seconds + " " + meridian + "!";
  
-    clock.innerText = clockTime;
+    clock.textContent = clockTime;
 };
 
 
@@ -91,12 +91,12 @@ const partyEvent = function() {
    if (isPartyTime === false) {
       isPartyTime = true;
       time = partyTime;
-      partyTimeButton.innerText = "PARTY OVER";
+      partyTimeButton.textContent = "PARTY OVER";
       partyTimeButton.style.backgroundColor = "#222";
    } else {
       isPartyTime = false;
       time = new Date().getHours();
-      partyTimeButton.innerText = "PARTY TIME!";
+      partyTimeButton.textContent = "PARTY TIME!";
       partyTimeButton.style.backgroundColor = "#0A8DAB";
    }
 };
